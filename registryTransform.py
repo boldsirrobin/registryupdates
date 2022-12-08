@@ -14,12 +14,14 @@ import sys
 # -----------------------------
 ## Filenames
 partner = 'CCCU' # This will be CCCU, GBS or BSU
-intake = 'Sep22' # For updates, this might be something like  "weekly".
+intake = 'Sep22' # e.g., Jun21, Sep22. For updates, this might be something like  "weekly".
 dateReceived = '20221207' # This is a date in Unix format and should be part of the file name.
 inputSuffix = '.xlsx' # Set to .xlsx or .csv.
 outputSuffix = '.csv'
-inputFile = partner + intake + '_' + dateReceived + inputSuffix
-outputFile = partner + intake + '_' + dateReceived + outputSuffix
+inputPath = '../excelfiles/'
+outputPath = '../csvfiles/'
+inputFile = inputPath + partner + intake + '_' + dateReceived + inputSuffix
+outputFile = outputPath + partner + intake + '_' + dateReceived + outputSuffix
 print('File from Registry is ', inputFile)
 
 ##Operations
